@@ -1,0 +1,83 @@
+<project>
+<groupId>edu.berkeley</groupId>
+<artifactId>simple-project</artifactId>
+<modelVersion>4.0.0</modelVersion>
+<name>Simple Project</name>
+<packaging>jar</packaging>
+<version>1.0</version>
+<repositories>
+<repository>
+<id>Akka repository</id>
+<url>http://repo.akka.io/releases</url>
+</repository>
+</repositories>
+<dependencies>
+<dependency> <!-- Spark dependency -->
+<groupId>org.apache.spark</groupId>
+<artifactId>spark-core_2.10</artifactId>
+<version>0.9.2</version>
+<!--version>0.9.2</version-->
+</dependency>
+<!--3rd-party library-->
+ <dependency>
+   <groupId>no.uib.cipr</groupId>
+   <artifactId>no.uib.cipr</artifactId>
+   <version>0.9.14</version>
+   <scope>system</scope>
+   <systemPath>/home/hadoop/javalib/mtj-0.9.14.jar</systemPath>
+ </dependency>
+
+ <dependency>
+   <groupId>nthu.scopelab.tsqr</groupId>
+   <artifactId>nthu.scopelab.tsqr</artifactId>
+   <version>0.1</version>
+   <scope>system</scope>
+   <systemPath>/home/hadoop/TsqrJob/ITSQR_Hadoop_v1/TSQR.jar</systemPath>
+ </dependency>
+
+<dependency>
+<groupId>netlib</groupId>
+<artifactId>org.netlib.lapack</artifactId>
+<version>0.8</version>
+<scope>system</scope>
+<systemPath>/home/hadoop/javalib/jlapack-0.8/lapack.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>netlib</groupId>
+<artifactId>org.netlib.blas</artifactId>
+<version>0.8</version>
+<scope>system</scope>
+<systemPath>/home/hadoop/javalib/jlapack-0.8/blas.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>netlib</groupId>
+<artifactId>org.netlib.f2jutil</artifactId>
+<version>0.8</version>
+<scope>system</scope>
+<systemPath>/home/hadoop/javalib/jlapack-0.8/f2jutil.jar</systemPath>
+</dependency>
+
+<dependency>
+ <groupId>org.apache.hadoop</groupId>
+ <artifactId>hadoop-client</artifactId>
+ <version>1.2.1</version>
+</dependency>
+</dependencies>
+<build>
+<pluginManagement>
+<plugins>
+<plugin>
+<artifactId>maven-compiler-plugin</artifactId>
+<version>2.3.2</version>
+<configuration>
+<source>1.5</source>
+<target>1.5</target>
+<compilerArgument></compilerArgument>
+</configuration>
+</plugin>
+</plugins>
+</pluginManagement>
+</build>
+</project>
