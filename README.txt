@@ -24,13 +24,11 @@ This code is written in Java and uses JLAPACK and JBLAS library for matrix compu
 --------
 This code is for Linux systems.  This implementation is based on several library. Make sure those library are properly installed before running this program.
 
- * Apache Hadoop 1.x version (http://hadoop.apache.org/)
- * Apache Maven (http://maven.apache.org/)
  * Apache Spark 0.9.x version (http://spark.apache.org/)
    This implementation is running on Spark standalone mode
  * matrix-toolkits-java (https://github.com/fommil/matrix-toolkits-java)
  * JLAPACK, JBLAS and F2JUTLI (http://www.netlib.org/java/f2j/)
- * ITSQR package in Hadoop MapReduce implementation ()
+ * ITSQR package in Hadoop MapReduce implementation (https://github.com/NovanHsiu/ITSQR-Hadoop)
  
 # Compiling 
 --------------
