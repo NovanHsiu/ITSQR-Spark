@@ -162,5 +162,5 @@ that caused by bigger data, you could find more detail in section 5.4.2 of my th
 Contact
 --------
  * For any questions, suggestions, and bug reports, email Hsiu-Cheng Yu by s411051@gmail.com please.
- * This code can be reached at: https://github.com/NovanHsiu/ITSQR
+ * This code can be reached at: https://github.com/NovanHsiu/ITSQR-Spark
  
