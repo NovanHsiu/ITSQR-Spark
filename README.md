@@ -2,9 +2,9 @@ ITSQR: Iterative Tall-and-Skinny QR Factorization in Spark Implementation
 ======
 
 ## Introduction
-Author: Hsiu-Cheng Yu, Che-Rung Lee
-Version: 0.1
-Distributed in 2014/09/04
+* Author: Hsiu-Cheng Yu, Che-Rung Lee
+* Version: 0.1
+* Distributed in 2014/09/04
 
 The function provided by this package is a QR factorizations for Tall-and-Skinny matrices (TSQR) implementation. A 'Tall-and-Skinny matrix' which number of rows is much bigger than its number of columns. The TSQR function can be used to solve many problems, such as stochastic SVD (SSVD). You can find more detail about 
 this implemenation in my thesis *Implemenations of TSQR for Cloud Platforms and Its Applications of SSVD and Collaborative Filtering*.
@@ -70,19 +70,18 @@ Using Maven to compile and archive, or remove the old file.
    - Path where TSQR package is installed
    - TSQR_DIR=`${SPARK_HOME}/ITSQR_Spark_v1`
   
-### Upload our example for experiment of ITSQR or SSVD
+### Upload test data for experiment of ITSQR or SSVD
 ``` 
  $ hadoop fs -mkdir tsqr
  $ hadoop fs -copyFromLocal testdata/100x5
 ``` 
 In the input file of example, one line means one row in a matrix, and numbers are separated by a space. If you want to use other matrices for this code, the format of matrices must follow above rules.
 
-### Upload our test data for experiment of Recommendation System
+### Upload test data for experiment of Recommendation System
 ```
  $ hadoop fs -mkdir ratingData
  $ hadoop fs -copyFromLocal testdata/testRatingData
 ``` 
-
  The input of recommendation system is composed by user ratings for items in text file, looks like following example:
 ```
  <user id> <item id> <rating value>
