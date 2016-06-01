@@ -31,7 +31,7 @@ This code is for Linux systems. This implementation is based on several library.
  * ITSQR package in Hadoop MapReduce implementation (https://github.com/NovanHsiu/ITSQR-Hadoop)
  
 ## Compiling 
-First, decompress our archive into installed directory of Spark. And setup following paths in script *compute-classpath.sh* and *pom.xml*.
+First, copy this package into directory of Spark. And setup following paths in script *compute-classpath.sh* and *pom.xml*.
 There are five paths of libraries need to setup in *compute-classpath.sh*: MTJ, JLAPACK, JBLAS, JUTIL and HITSQR.
 
  - MTJ 
