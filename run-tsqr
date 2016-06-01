@@ -44,7 +44,7 @@ fi
 # Figure out the JAR file that our examples were packaged into. This includes a bit of a hack
 # to avoid the -sources and -doc packages that are built by publish-local.
 RUNNER_DIR=$DIR
-export SPARK_EXAMPLES_JAR=`ls "$RUNNER_DIR"/target/simple-project-1.0.jar`
+export SPARK_EXAMPLES_JAR=`ls "$RUNNER_DIR"/target/TSQR-Spark-0.1.jar`
 
 # Since the examples JAR ideally shouldn't include spark-core (that dependency should be
 # "provided"), also add our standard Spark classpath, built using compute-classpath.sh.
@@ -87,4 +87,3 @@ fi
 CLASSPATH="$CLASSPATH"
 
 exec "$RUNNER" -cp "$CLASSPATH" $JAVA_OPTS "$@" -projectDir $DIR 
-#echo "$RUNNER" -cp "$CLASSPATH" $JAVA_OPTS "$@"

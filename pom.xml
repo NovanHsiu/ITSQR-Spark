@@ -1,10 +1,10 @@
 <project>
-<groupId>edu.berkeley</groupId>
-<artifactId>simple-project</artifactId>
+<groupId>nthu.scopelab.stsqr</groupId>
+<artifactId>TSQR-Spark</artifactId>
 <modelVersion>4.0.0</modelVersion>
-<name>Simple Project</name>
+<name>ITSQR_Spark</name>
 <packaging>jar</packaging>
-<version>1.0</version>
+<version>0.1</version>
 <repositories>
 <repository>
 <id>Akka repository</id>
